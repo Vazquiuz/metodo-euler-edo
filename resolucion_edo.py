@@ -21,7 +21,7 @@ for i in range(len(t_euler) - 1):
 
 print("--- Resultados (h = 0.2) ---")
 for ti, yi in zip(t_euler, y_euler):
-    print(f"t: {ti:.1f} | Euler: {yi:.5f} | Exacta: {y_exacta_num(ti):.5f}")
+    print(f"t: {ti:.1f} | Euler: {yi:.5f} | Exacta: {float(y_exacta_num(ti)):.5f}")
 
 # 3. GRAFICACIÓN
 t_fino = np.linspace(0, 1, 100)
